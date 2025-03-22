@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background-color: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+h1 {
+    color: white;
+}
+
+button {
+    background: linear-gradient(to right, #6a11cd, #2575fc);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.loader {
+    display: none;
+    margin: 20px auto;
+    border: 5px solid #f3f3f3; 
+    border-top: 5px solid #ff3b3b; 
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite; 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.user-list {
+    margin-top: 20px;
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px;
+    background: linear-gradient(to right, #6a11cd, #2575fc);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.user-card p {
+    margin: 0;
+}
